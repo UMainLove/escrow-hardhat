@@ -1,0 +1,8 @@
+{
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.scrollback": 100000,
+    "terminal.integrated.shellIntegration.history": 30,
+    "css.validate": false,
+    "scss.validate": false,
+    "less.validate": false
+}

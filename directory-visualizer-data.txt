@@ -1,0 +1,64 @@
+ESCROW-HARDHAT
+ ┣ app
+ ┃  ┣ public
+ ┃  ┃  ┣ favicon.ico
+ ┃  ┃  ┣ index.html
+ ┃  ┃  ┣ logo192.png
+ ┃  ┃  ┣ logo512.png
+ ┃  ┃  ┣ manifest.json
+ ┃  ┃  ┗ robots.txt
+ ┃  ┣ src
+ ┃  ┃  ┣ artifacts
+ ┃  ┃  ┣ components
+ ┃  ┃  ┃  ┣ escrow
+ ┃  ┃  ┃  ┃  ┣ CreateDeal.js
+ ┃  ┃  ┃  ┃  ┣ DealActions.js
+ ┃  ┃  ┃  ┃  ┣ DealItem.js
+ ┃  ┃  ┃  ┃  ┣ DealList.js
+ ┃  ┃  ┃  ┃  ┗ DisputeResolution.js
+ ┃  ┃  ┃  ┣ layout
+ ┃  ┃  ┃  ┃  ┣ Footer.js
+ ┃  ┃  ┃  ┃  ┣ Header.js
+ ┃  ┃  ┃  ┃  ┗ Layout.js
+ ┃  ┃  ┃  ┣ manager
+ ┃  ┃  ┃  ┃  ┗ ManagerDashboard.js
+ ┃  ┃  ┃  ┗ wallet
+ ┃  ┃  ┃     ┗ ConnectWallet.js
+ ┃  ┃  ┣ contexts
+ ┃  ┃  ┃  ┗ Web3Context.js
+ ┃  ┃  ┃  ┗ ErrorBoundary.js
+ ┃  ┃  ┣ hooks
+ ┃  ┃  ┃  ┣ useEscrowContract.js
+ ┃  ┃  ┃  ┗ useEthers.js
+ ┃  ┃  ┣ pages
+ ┃  ┃  ┃  ┣ Deals.js
+ ┃  ┃  ┃  ┣ Home.js
+ ┃  ┃  ┃  ┗ Manager.js
+ ┃  ┃  ┣ styles
+ ┃  ┃  ┃  ┗ tailwind.css
+ ┃  ┃  ┣ utils
+ ┃  ┃  ┃  ┣ constants.js
+ ┃  ┃  ┃  ┗ helpers.js
+ ┃  ┃  ┣ App.js
+ ┃  ┃  ┣ index.css
+ ┃  ┃  ┣ index.js
+ ┃  ┃  ┣ logo.svg
+ ┃  ┃  ┗ reportWebVitals.js
+ ┃  ┣ .gitignore
+ ┃  ┣ package-lock.json
+ ┃  ┗ package.json
+ ┣ contracts
+ ┃  ┣ Escrow_Wallet.sol
+ ┃  ┗ IERC5528.sol
+ ┣ scripts
+ ┃  ┗ deploy.js
+ ┣ src
+ ┃  ┗ contracts
+ ┃     ┗ contractAddress.json
+ ┣ test
+ ┃  ┗ test.js
+ ┣ .gitignore
+ ┣ hardhat.config.js
+ ┣ package-lock.json
+ ┣ package.json
+ ┗ readme.md

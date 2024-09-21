@@ -1,70 +1,33 @@
-body {
-  background-color: #eee;
-  display: flex;
-  font-family: 'Muli', sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.contract, .existing-contracts {
-  margin: 20px;
-  display: inline-block;
-  padding: 40px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-}
+html, body, #root {
+    height: 100%;
+  }
 
-h1 {
-  margin: 10px;
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-}
+  body {
+    @apply bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+    @apply text-center; 
+  }
 
-label {
-  display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
-  color: #aaa;
-  margin: 20px;
-}
+  border-default {
+    @apply border border-gray-300 dark:border-gray-600;
+  }
 
-input[type="text"] {
-  padding: 6px;
-  font-size: 18px;
-}
+  
+  hr {
+    @apply border-t border-gray-300 dark:border-gray-600;
+  }
 
-.button {
-  background-color: #f58427;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 20px;
-  padding: 9px 25px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
+  .bg-card {
+    @apply bg-white dark:bg-gray-800;
+  }
 
-.existing-contract ul {
-  padding: 10px;
-  margin: 20px;
-  background-color: #eee;
-}
-
-.existing-contract ul > li {
-  list-style: none;
-  display: flex;
-  margin: 10px;
-}
-
-.existing-contract ul > li > div {
-  margin: 0 5px;
-}
-
-.existing-contract ul > li > :first-child {
-  font-weight: bold;
-}
-
-.existing-contract .complete {
-  color: #5aa75a;
-  text-align: center;
-}
+  :root {
+    --border-color: theme('colors.gray.300');
+  }
+  
+  .dark {
+    --border-color: theme('colors.gray.600');
+  }

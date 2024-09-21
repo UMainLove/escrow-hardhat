@@ -1,24 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import { createRoot } from 'react-dom/client';
 import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import ErrorBoundary from './components/ErrorBoundary';
 
-if (!window.ethereum) {
-  root.render(
-    <React.StrictMode>
-      You need to install a browser wallet to build the escrow dapp
-    </React.StrictMode>
-  );
-} else {
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
-}
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
+  <React.StrictMode>
+    <ErrorBoundary>
+      
+        <App />
+      
+    </ErrorBoundary>
+  </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
